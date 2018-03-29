@@ -26,5 +26,6 @@ reverseColourOrder = reverse [minBound :: Colour .. maxBound :: Colour]
  - For example: paintMix Green Violet = Indigo
  - Hint: Integer division can be performed with the quot function: quot 7 2 = 3
  -}
+paintMix :: Colour -> Colour -> Colour
 paintMix c1 c2 = [c1 .. c2] !! quot (length [c1 .. c2]) 2
 -- idea here is that we can restrict the search to only the elements between c1 and c2 
